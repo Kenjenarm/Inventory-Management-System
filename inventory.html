@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<!--this html doccument simply prompts the user for a password and a selection of either view,add,or delete and passes the input to the php doccument
+Written by Kenneth McElveen for CTI 110 FA2020 Mr. Tyree
+-->
+<head>
+	<title>inventoryAccess</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+
+<body>
+	<h1>Warning!! Authorized Persons Only</h1>
+	<p><strong>Inventory Control System</strong></p>
+	<p>You May View, Edit, Or Delete Inventory Items</p>
+
+	<form action = "inventory.php" method = "post" >
+
+	<table>			
+		<tr>	
+			<td>Enter the password!</td>
+			<td><input type = "text" name = "masterPass"></td>
+		</tr>
+
+		<tr>	
+			<td>Select an action.</td>
+			<td><select name = "actionType">
+				<option>Select One</option>
+				<option>view</option>
+				<option>add</option>
+				<option>delete</option>			
+			</select></td>
+		</tr>
+		
+		<tr>	
+			<td><input type = "reset" value = "Restart This Page"></td>
+			<td><input type = "submit" value = "SUBMIT"></td>			
+		</tr>
+	</table>
+</form>
+</body>
+</html>

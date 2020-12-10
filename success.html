@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<!--this html doccument is a copy of the inventory.html page with an added success message
+Written by Kenneth McElveen for CTI 110 FA 2020 Mr. Tyree
+-->
+<html>
+<head>
+	<title>inventoryAccess</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+
+<body>
+	<h1>The Edit Was Successful!</h1>
+	<h2>Warning!! Authorized Persons Only</h2>
+	<p><strong>Inventory Control System</strong></p>
+	<p>You May View, Edit, Or Delete Inventory Items</p>
+
+	<form action = "inventory.php" method = "post" >
+
+	<table>			
+		<tr>	
+			<td>Enter the password!</td>
+			<td><input type = "text" name = "masterPass"></td>
+		</tr>
+
+		<tr>	
+			<td>Select an action.</td>
+			<td><select name = "actionType">
+				<option>Select One</option>
+				<option>view</option>
+				<option>add</option>
+				<option>delete</option>			
+			</select></td>
+		</tr>
+		
+		<tr>	
+			<td><input type = "reset" value = "Restart This Page"></td>
+			<td><input type = "submit" value = "SUBMIT"></td>			
+		</tr>
+	</table>
+</form>
+</body>
+</html>

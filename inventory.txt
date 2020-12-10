@@ -1,0 +1,4 @@
+Item  ,  Price , Quantity
+Onions, 2.53, 11 
+Crab, 13.75, 31 
+Monkey, 22.75, 1

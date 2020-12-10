@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<!--this html doccument asks the user for the new item information and passes it to the php doccument
+Written by Kenneth McElveen for CTI 110 FA2020 Mr. Tyree
+-->
+<head>
+	<title>inventoryAccess</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+
+<body>
+	<h1>Warning!! Authorized Persons Only</h1>
+	<p><strong>Inventory Controll System</strong></p>
+	<p>Please Add An Item</p>
+
+	<form action = "add.php" method = "post" >
+
+	<table>			
+		<tr>	
+			<td>Enter the item name.</td>
+			<td><input type = "text" name = "itemName"></td>
+		</tr>
+		<tr>	
+			<td>Enter the item price.</td>
+			<td><input type = "text" name = "itemPrice"></td>
+		</tr>
+		<tr>	
+			<td>Enter the number of this item to add.</td>
+			<td><input type = "text" name = "itemNumber"></td>
+		</tr>
+		
+		<tr>	
+			<td><input type = "reset" value = "Start This Form Over"></td>
+			<td><input type = "submit" value = "Add Your Item"></td>			
+		</tr>
+	</table>
+</form>
+</body>
+</html>
